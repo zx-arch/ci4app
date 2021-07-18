@@ -14,8 +14,7 @@
                 <div class="container">
                     <div class="front" style="background-image: url(<?= $data['sampul']; ?>)">
                         <div class="inner">
-                            <span style="font-weight: bold;"><?= $data['judul']; ?></span><br><br>
-                            <?php include APPPATH . 'Views/layout/getallgenre.php'; ?>
+                            <span style="font-weight: bold;"><?= $data['judul']; ?></span>
                         </div>
                     </div>
                     <div class="back">
@@ -36,5 +35,4 @@
         <h2 style="color: white;text-align:center;">Komik "<?= $search; ?>" Belum Tamat</h2>
     <?php endif; ?>
 <?php endif; ?>
-</div>
 <?= $this->endSection(); ?>

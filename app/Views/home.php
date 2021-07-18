@@ -1,4 +1,5 @@
-<?php include APPPATH . 'Views/layout/header.php'; ?>
+<?php $this->extend("layout/template"); ?>
+<?php $this->section("content"); ?>
 <div class="topnav">
     <a class="active" href="/">Home</a>
     <a href="/kategori/terpopuler">Terpopuler</a>
@@ -26,14 +27,13 @@
                 <div class="container">
                     <div class="front" style="background-image: url(<?= $data['sampul']; ?>)">
                         <div class="inner">
-                            <span style="font-weight: bold;"><?= $data['judul']; ?></span><br><br>
-                            <?php include APPPATH . 'Views/layout/getallgenre.php'; ?>
+                            <span style="font-weight: bold;"><?= $data['judul']; ?></span>
                         </div>
                     </div>
                     <div class="back">
                         <div class="inner">
                             <p style="color: black;">Komik ini ditulis oleh <?= $data['penulis']; ?>, dirilis pada tahun <?= $data['tahun_rilis']; ?>, dengan rating <?= $data['rating']; ?></p>
-                            <a href="" class="button6">Baca Komik</a>
+                            <a href="<?= $data['slug']; ?>" id="tombolbacakomik" class="button6">Baca Komik</a>
                         </div>
                     </div>
                 </div>
@@ -44,5 +44,5 @@
 <?php if (empty($home)) : ?>
     <h2 style="text-align: center;color:white;">Komik "<?= $search; ?>" Belum Tersedia</h2>
 <?php endif; ?>
-</div>
+
 <?php $this->endSection(); ?>

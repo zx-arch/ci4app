@@ -1,4 +1,5 @@
-<?php include APPPATH . 'Views/layout/header.php'; ?>
+<?php $this->extend("layout/template"); ?>
+<?php $this->section("content"); ?>
 <div class="topnav">
     <a href="/">Home</a>
     <a class="active" href="/kategori/terpopuler">Terpopuler</a>
@@ -14,8 +15,7 @@
                 <div class="container">
                     <div class="front" style="background-image: url(<?= $data['sampul']; ?>)">
                         <div class="inner">
-                            <span style="font-weight: bold;"><?= $data['judul']; ?></span><br><br>
-                            <?php include APPPATH . 'Views/layout/getallgenre.php'; ?>
+                            <span style="font-weight: bold;"><?= $data['judul']; ?></span>
                         </div>
                     </div>
                     <div class="back">
@@ -37,5 +37,4 @@
     <?php endif; ?>
 
 <?php endif; ?>
-</div>
 <?php $this->endSection(); ?>

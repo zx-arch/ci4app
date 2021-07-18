@@ -11,9 +11,11 @@
 
 <body>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <div class="wrapper">
         <?php $this->renderSection("content"); ?>
         <script type="text/javascript" src="<?php echo base_url('js/script.js'); ?>"></script>
+    </div>
 </body>
 
 </html>
