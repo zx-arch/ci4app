@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 20, 2021 at 03:08 PM
+-- Generation Time: Jul 20, 2021 at 03:17 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.4.20
 
@@ -2078,7 +2078,23 @@ INSERT INTO `listchaptermanga` (`id`, `slug`, `chapter`, `created_at`, `updated_
 (2033, 'shuumatsu-no-valkyrie', 'chapter-47.3', '2021-07-20 07:29:31', '2021-07-20 07:29:31'),
 (2034, 'shuumatsu-no-valkyrie', 'chapter-48.1', '2021-07-20 07:29:31', '2021-07-20 07:29:31'),
 (2035, 'shuumatsu-no-valkyrie', 'chapter-48.2', '2021-07-20 07:29:31', '2021-07-20 07:29:31'),
-(2036, 'shuumatsu-no-valkyrie', 'chapter-49', '2021-07-20 07:29:31', '2021-07-20 07:29:31');
+(2036, 'shuumatsu-no-valkyrie', 'chapter-49', '2021-07-20 07:29:31', '2021-07-20 07:29:31'),
+(2037, 'monster-x-monster', 'chapter-1', '2021-07-20 08:14:56', '2021-07-20 08:14:56'),
+(2038, 'monster-x-monster', 'chapter-2', '2021-07-20 08:14:56', '2021-07-20 08:14:56'),
+(2039, 'monster-x-monster', 'chapter-3', '2021-07-20 08:14:56', '2021-07-20 08:14:56'),
+(2040, 'monster-x-monster', 'chapter-4', '2021-07-20 08:14:56', '2021-07-20 08:14:56'),
+(2041, 'monster-x-monster', 'chapter-5', '2021-07-20 08:14:56', '2021-07-20 08:14:56'),
+(2042, 'monster-x-monster', 'chapter-6', '2021-07-20 08:14:56', '2021-07-20 08:14:56'),
+(2043, 'monster-x-monster', 'chapter-7', '2021-07-20 08:14:56', '2021-07-20 08:14:56'),
+(2044, 'monster-x-monster', 'chapter-8', '2021-07-20 08:14:56', '2021-07-20 08:14:56'),
+(2045, 'monster-x-monster', 'chapter-9', '2021-07-20 08:14:56', '2021-07-20 08:14:56'),
+(2046, 'monster-x-monster', 'chapter-10', '2021-07-20 08:14:56', '2021-07-20 08:14:56'),
+(2047, 'monster-x-monster', 'chapter-11', '2021-07-20 08:14:56', '2021-07-20 08:14:56'),
+(2048, 'monster-x-monster', 'chapter-12', '2021-07-20 08:14:56', '2021-07-20 08:14:56'),
+(2049, 'monster-x-monster', 'chapter-13', '2021-07-20 08:14:56', '2021-07-20 08:14:56'),
+(2050, 'monster-x-monster', 'chapter-14', '2021-07-20 08:14:56', '2021-07-20 08:14:56'),
+(2051, 'monster-x-monster', 'chapter-15', '2021-07-20 08:14:56', '2021-07-20 08:14:56'),
+(2052, 'monster-x-monster', 'chapter-16', '2021-07-20 08:14:56', '2021-07-20 08:14:56');
 
 --
 -- Indexes for dumped tables
@@ -2098,7 +2114,7 @@ ALTER TABLE `listchaptermanga`
 -- AUTO_INCREMENT for table `listchaptermanga`
 --
 ALTER TABLE `listchaptermanga`
-  MODIFY `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2037;
+  MODIFY `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2053;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

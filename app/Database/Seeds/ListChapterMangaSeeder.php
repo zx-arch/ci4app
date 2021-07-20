@@ -14,6 +14,7 @@ class ListChapterMangaSeeder extends Seeder
         $count = 0;
         // untuk data silakan import sqlnya dulu, lalu jalankan looping dibawah ini satu per satu
 
+
         $this->db->table("listchaptermanga")->insertBatch($data);
     }
 }

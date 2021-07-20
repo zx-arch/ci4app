@@ -204,3 +204,13 @@ $routes->get('/shuumatsu-no-valkyrie/(:any)', function ($method) {
         }
     }
 });
+$routes->get('/monster-x-monster/(:any)', function ($method) {
+    for ($i = 1; $i <= 16; $i++) {
+        // array_push($data, [
+        //     "slug"  => "monster-x-monster",
+        //     "chapter" => "chapter-$i",
+        //     "created_at" => Time::now(),
+        //     "updated_at" => Time::now()
+        // ]);
+    }
+});
