@@ -81,3 +81,126 @@ $routes->get('/ao-no-exorcise/(:any)', function ($method) {
         }
     }
 });
+$routes->get('/rising-x-rydeen/(:any)', function ($method) {
+    for ($i = 1; $i <= 29; $i++) {
+        // array_push($data, [
+        //     "slug"  => "rising-x-rydeen",
+        //     "chapter" => "chapter-$i",
+        //     "created_at" => Time::now(),
+        //     "updated_at" => Time::now()
+        // ]);
+    }
+});
+$routes->get('/kemono-giga/(:any)', function ($method) {
+    for ($i = 1; $i <= 66; $i++) {
+        if ($i === 16 or $i === 25 or $i === 44) {
+            // array_push($data, [
+            //     "slug"  => "kemono-giga",
+            //     "chapter" => "chapter-$i",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+            // array_push($data, [
+            //     "slug"  => "kemono-giga",
+            //     "chapter" => "chapter-$i.5",
+            //     "created_at" => Time::now(),
+            //     
+        } else {
+            // array_push($data, [
+            //     "slug"  => "kemono-giga",
+            //     "chapter" => "chapter-$i",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+        }
+    }
+});
+$routes->get('/shuumatsu-no-valkyrie/(:any)', function ($method) {
+    for ($i = 1; $i <= 49; $i++) {
+        if ($i === 2 or $i === 9 or $i === 12 or $i === 23) {
+            // array_push($data, [
+            //     "slug"  => "shuumatsu-no-valkyrie",
+            //     "chapter" => "chapter-$i",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+            // array_push($data, [
+            //     "slug"  => "shuumatsu-no-valkyrie",
+            //     "chapter" => "chapter-$i.5",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+        } elseif ($i === 1 or $i >= 3 and $i <= 8 or $i === 10 or $i === 11 or $i >= 13 and $i <= 17 or $i === 22 or $i === 26 or $i === 42 or $i === 49) {
+            // array_push($data, [
+            //     "slug"  => "shuumatsu-no-valkyrie",
+            //     "chapter" => "chapter-$i",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+        } elseif ($i === 18 or $i === 19) {
+            // array_push($data, [
+            //     "slug"  => "shuumatsu-no-valkyrie",
+            //     "chapter" => "chapter-$i",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+            // array_push($data, [
+            //     "slug"  => "shuumatsu-no-valkyrie",
+            //     "chapter" => "chapter-$i.2",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+        } elseif ($i === 37) {
+            // array_push($data, [
+            //     "slug"  => "shuumatsu-no-valkyrie",
+            //     "chapter" => "chapter-$i.1",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+            // array_push($data, [
+            //     "slug"  => "shuumatsu-no-valkyrie",
+            //     "chapter" => "chapter-$i.2",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+            // array_push($data, [
+            //     "slug"  => "shuumatsu-no-valkyrie",
+            //     "chapter" => "chapter-$i.5",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+        } elseif ($i === 39 or $i === 45 or $i === 47) {
+            // array_push($data, [
+            //     "slug"  => "shuumatsu-no-valkyrie",
+            //     "chapter" => "chapter-$i.1",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+            // array_push($data, [
+            //     "slug"  => "shuumatsu-no-valkyrie",
+            //     "chapter" => "chapter-$i.2",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+            // array_push($data, [
+            //     "slug"  => "shuumatsu-no-valkyrie",
+            //     "chapter" => "chapter-$i.3",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+        } else {
+            // array_push($data, [
+            //     "slug"  => "shuumatsu-no-valkyrie",
+            //     "chapter" => "chapter-$i.1",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+            // array_push($data, [
+            //     "slug"  => "shuumatsu-no-valkyrie",
+            //     "chapter" => "chapter-$i.2",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+        }
+    }
+});
