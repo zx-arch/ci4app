@@ -16,7 +16,7 @@ class Naruto extends BaseController
 
 		$getgenre = $this->db->table('genremanga')->select("genre")->whereIn("slug", ["naruto"])->get()->getResultArray();
 
-		$getchapter = $this->db->table('listchaptermanga')->select("*")->whereIn("slug", ["naruto"])->get()->getResultArray();
+		$getchapter = $this->db->table('listchaptermanga')->select("*")->whereIn("slug", ["naruto"])->orderBy('id', 'DESC')->get()->getResultArray();
 
 		$genr = "";
 		foreach ($getgenre as $g) {

@@ -41,7 +41,7 @@ class KomikManga extends Migration
 			],
 			'sinopsis'       => [
 				'type'       => 'VARCHAR',
-				'constraint' => '255',
+				'constraint' => '1000',
 			],
 			'tahun_rilis'       => [
 				'type'       => 'INT',
