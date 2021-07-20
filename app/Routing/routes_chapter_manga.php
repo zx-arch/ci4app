@@ -214,3 +214,41 @@ $routes->get('/monster-x-monster/(:any)', function ($method) {
         // ]);
     }
 });
+$routes->get('/boruto/(:any)', function ($method) {
+    for ($i = 1; $i <= 59; $i++) {
+        if ($i <= 34 or $i === 40 or $i === 41 or $i === 43 or $i === 44 or $i === 46 or $i === 48 or $i === 49 or $i >= 51 and $i <= 55) {
+            // array_push($data, [
+            //     "slug"  => "boruto",
+            //     "chapter" => "chapter-$i",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+        } elseif ($i >= 35 and $i <= 37) {
+            // array_push($data, [
+            //     "slug"  => "boruto",
+            //     "chapter" => "chapter-$i",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+            // array_push($data, [
+            //     "slug"  => "boruto",
+            //     "chapter" => "chapter-$i.2",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+        } elseif ($i === 38 or $i === 39 or $i === 42 or $i === 45 or $i === 47 or $i === 50 or $i >= 56 and $i <= 59) {
+            // array_push($data, [
+            //     "slug"  => "boruto",
+            //     "chapter" => "chapter-$i.1",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+            // array_push($data, [
+            //     "slug"  => "boruto",
+            //     "chapter" => "chapter-$i.2",
+            //     "created_at" => Time::now(),
+            //     "updated_at" => Time::now()
+            // ]);
+        }
+    }
+});
