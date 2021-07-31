@@ -15,7 +15,6 @@ class Home extends BaseController
 		$keyword = $this->request->getVar('search');
 		$resultsearch = $this->db->table('komikmanga')->select("*")->where("judul LIKE '$keyword%'")->get()->getResultArray();
 		$resultkomik = $this->db->table('komikmanga')->orderBy("judul", "RANDOM")->get()->getResultArray();
-		$genre = $this->db->table('genremanga')->select("*")->join('komikmanga', 'komikmanga.slug = genremanga.slug', 'inner')->get()->getResultArray();
 		// $acakkomik = [];
 		// function randomGen($min, $max, $quantity)
 		// {
