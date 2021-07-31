@@ -21,7 +21,7 @@ $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override(function () {
-	return "<script>window.location.href=`/naruto`;</script>";
+	return "<script>window.location.href=`/`;</script>";
 });
 $routes->setAutoRoute(true);
 
