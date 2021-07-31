@@ -32,7 +32,7 @@ $routes->get('/naruto/(:any)', function ($method) {
                 }
             }
         } else {
-            return "window.location.href=`/naruto`;</script>";
+            return "<script>window.location.href=`/naruto`;</script>";
         }
     } else {
         return "<script>window.location.href=`/naruto`;</script>";
