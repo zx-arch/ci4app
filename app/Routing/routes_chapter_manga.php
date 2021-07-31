@@ -32,12 +32,10 @@ $routes->get('/naruto/(:any)', function ($method) {
                 }
             }
         } else {
-            session()->setFlashdata("warning", "Tidak Tersedia Komik Naruto Chapter $getnumberchapter");
-            return view("url_handle_chapter");
+            return "<script>alert('Tidak Tersedia Komik Naruto Chapter $getnumberchapter');window.location.href=`/naruto`;</script>";
         }
     } else {
-        session()->setFlashdata("warning", "$method");
-        return view("bad_url");
+        return "<script>alert('URL " . base_url('/naruto') . "/$method" . " Tidak Valid');window.location.href=`/naruto`;</script>";
     }
 });
 $routes->get('/one-piece/(:any)', function ($method) {
