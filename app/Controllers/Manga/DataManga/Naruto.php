@@ -25,7 +25,7 @@ class Naruto extends BaseController
 		$genr = substr($genr, 0, -1);
 		$genr = substr($genr, 0, -1);
 		$datanaruto = [
-			"title" => "Komik Naruto",
+			"title" => "Manga Naruto",
 			"datanaruto" => $resultdata,
 			"genrenaruto" => $genr,
 			"chapternaruto" => $getchapter

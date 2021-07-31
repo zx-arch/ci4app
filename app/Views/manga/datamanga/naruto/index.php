@@ -13,7 +13,7 @@
                 <a href="<?= $ch['slug']; ?>/<?= $ch['slug']; ?>-<?= $ch['chapter']; ?>">
                     <?php $ch['chapter'] = ucfirst(str_replace("-", " ", $ch['chapter'])) ?>
                     <?php $ch['slug'] = ucwords(str_replace("-", " ", $ch['slug'])) ?>
-                    <p><?= $ch['slug']; ?> <?= $ch['chapter']; ?></p>
+                    <p class="detailchapter"><?= $ch['slug']; ?> <?= $ch['chapter']; ?></p>
                 </a>
             <?php endforeach; ?>
         </div>

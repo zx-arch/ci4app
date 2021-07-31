@@ -35,6 +35,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/naruto', 'Manga\DataManga\Naruto::index');
+$routes->get('/one-piece', 'Manga\DataManga\OnePiece::index');
 $routes->get('/kategori/terbaru', 'Kategori\Terbaru::index');
 $routes->get('/kategori/terpopuler', 'Kategori\Terpopuler::index');
 $routes->get('/status/tamat', 'Status\Tamat::index');
