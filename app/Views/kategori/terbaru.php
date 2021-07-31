@@ -21,7 +21,7 @@
                     <div class="back">
                         <div class="inner">
                             <p style="color: black;">Komik ini ditulis oleh <?= $data['penulis']; ?>, dirilis pada tahun <?= $data['tahun_rilis']; ?>, dengan rating <?= $data['rating']; ?></p>
-                            <a href="" class="button6">Baca Komik</a>
+                            <a href="/<?= $data['slug']; ?>" class="button6">Baca Komik</a>
                         </div>
                     </div>
                 </div>
