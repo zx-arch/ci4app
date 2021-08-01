@@ -14,11 +14,11 @@ class Terpopuler extends BaseController
     {
         $keyword = $this->request->getVar('search');
 
-        $resultsearch = $this->db->table('komikmanga')->select("*")->where("rating > 7 AND judul LIKE '$keyword%'")->orderBy("rating", "DESC")->get()->getResultArray();
+        $resultsearch = $this->db->table('komikmanga')->select("*")->where("rating > 8 AND judul LIKE '$keyword%'")->orderBy("rating", "DESC")->get()->getResultArray();
 
-        $dataterpopuler = $this->db->table('komikmanga')->select("*")->where("rating > 7")->orderBy("rating", "DESC")->get()->getResultArray();
+        $dataterpopuler = $this->db->table('komikmanga')->select("*")->where("rating > 8")->orderBy("rating", "DESC")->get()->getResultArray();
 
-        $terendah = $this->db->table('komikmanga')->select("*")->where("rating <= 7")->whereIn("judul", ["$keyword"])->get()->getResultArray();
+        $terendah = $this->db->table('komikmanga')->select("*")->where("rating <= 8")->whereIn("judul", ["$keyword"])->get()->getResultArray();
         $genre = $this->db->table('genremanga')->select("*")->join('komikmanga', 'komikmanga.slug = genremanga.slug', 'inner')->get()->getResultArray();
         $getmangagenre = [];
         foreach ($genre as $gen) {

@@ -9,12 +9,19 @@ class Home extends BaseController
 	public function __construct()
 	{
 		$this->db = \Config\Database::connect();
+		$this->datatampil = 16;
 	}
 	public function index()
 	{
 		$keyword = $this->request->getVar('search');
 		$resultsearch = $this->db->table('komikmanga')->select("*")->where("judul LIKE '$keyword%'")->get()->getResultArray();
 		$resultkomik = $this->db->table('komikmanga')->orderBy("judul", "RANDOM")->get()->getResultArray();
+		$acak = rand(1, count($resultkomik));
+		if ($acak <= count($resultkomik) - $this->datatampil) {
+			$resultkomik = $this->db->table('komikmanga')->limit($this->datatampil, $acak - 1)->orderBy("judul", "RANDOM")->get()->getResultArray();
+		} else {
+			$resultkomik = $this->db->table('komikmanga')->limit($this->datatampil, $acak - $this->datatampil - 1)->orderBy("judul", "RANDOM")->get()->getResultArray();
+		}
 		// $acakkomik = [];
 		// function randomGen($min, $max, $quantity)
 		// {
