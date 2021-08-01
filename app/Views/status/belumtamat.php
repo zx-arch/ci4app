@@ -1,4 +1,5 @@
-<?php include APPPATH . 'Views/layout/header.php'; ?>
+<?php $this->extend("layout/template"); ?>
+<?php $this->section("content"); ?>
 <div class="topnav">
     <a href="/">Home</a>
     <a href="/kategori/terpopuler">Terpopuler</a>
